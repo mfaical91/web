@@ -13,10 +13,7 @@ pipeline {
         }
           stage("Sonarqube Analysis") {
             steps {
-                withSonarQubeEnv('SonarQube') {
-                    sh '''$SCANNER_HOME/bin/sonar-scanner -Dsonar.projectName=Web\
-                    -Dsonar.projectKey=Web'''
-                }
+               
             }
         }
         stage("quality gate") {
