@@ -13,7 +13,7 @@ pipeline {
         }
           stage("Sonarqube Analysis") {
             steps {
-               
+               echo "Sonarqube Analysis"
             }
         }
         stage("quality gate") {
